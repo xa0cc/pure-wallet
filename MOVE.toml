@@ -1,26 +1,12 @@
 [package]
 name = "PureHeartWallet"
 version = "0.0.0"
-authors = ["xaoc"]
+authors = ["https://github.com/xa0cc"]
 license = "Apache-2.0"
 
 
 [addresses]
-std = "0x1"
-sui = "0x2"
-PureHeartWallet = "0x1488"
+PureHeartWallet = "0x0"
 
-[dependencies.MoveStdlib]
-git = "https://github.com/MystenLabs/sui.git"
-subdir = "crates/sui-framework/deps/move-stdlib"
-rev = "fa973184a13579108a45965f7ff0fc3f2e2dc753"
-
-[dependencies.Sui]
-git = "https://github.com/MystenLabs/sui.git"
-subdir = "crates/sui-framework"
-rev = "fa973184a13579108a45965f7ff0fc3f2e2dc753"
-
-[dependencies.Movemate]
-git = "https://github.com/pentagonxyz/movemate.git"
-subdir = "sui"
-rev = "...."
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "devnet-0.12.0" }
